@@ -55,7 +55,6 @@ INSERT INTO
 VALUES
     ('Phil', 1004);
 
-
 -- Enclosure
 INSERT INTO
     enclosure (name, capacity, closedForMaintenance)
@@ -89,25 +88,30 @@ VALUES
     (2, 'Whitney', 'Whale', 10);
 
 -- Assignment
-INSERT INTO 
+INSERT INTO
     assignment (enclosureId, employeeId, day)
 VALUES
     (1, 1, 'Wednesday');
 
-
-INSERT INTO 
+INSERT INTO
     assignment (enclosureId, employeeId, day)
 VALUES
     (1, 2, 'Wednesday');
 
-
-INSERT INTO 
+INSERT INTO
     assignment (enclosureId, employeeId, day)
 VALUES
     (2, 3, 'Wednesday');
 
-
-INSERT INTO 
+INSERT INTO
     assignment (enclosureId, employeeId, day)
 VALUES
     (2, 4, 'Wednesday');
+
+SELECT
+    *
+FROM
+    staff
+    INNER JOIN assignment ON assignment.employeeId = staff.id
+WHERE
+    assignment.enclosureId = 1;
