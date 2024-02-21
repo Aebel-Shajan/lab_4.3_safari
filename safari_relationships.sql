@@ -66,3 +66,24 @@ INSERT INTO
     enclosure (name, capacity, closedForMaintenance)
 VALUES
     ('Enclosure 2', 46, false);
+
+-- Animal
+INSERT INTO
+    animal (enclosureId, name, type, age)
+VALUES
+    (1, 'Tony', 'Tiger', 12);
+
+INSERT INTO
+    animal (enclosureId, name, type, age)
+VALUES
+    (1, 'Toby', 'Turtle', 300);
+
+INSERT INTO
+    animal (enclosureId, name, type, age)
+VALUES
+    (2, 'Simon', 'Shark', 100);
+
+INSERT INTO
+    animal (enclosureId, name, type, age)
+VALUES
+    (2, 'Whitney', 'Whale', 10);
