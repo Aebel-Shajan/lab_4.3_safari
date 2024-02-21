@@ -33,3 +33,24 @@ CREATE TABLE assigniment (
     employeeId INT REFERENCES staff(id),
     day VARCHAR(255)
 );
+
+-- Staff
+INSERT INTO
+    staff (name, employeeNumber)
+VALUES
+    ('Colin', 1001);
+
+INSERT INTO
+    staff (name, employeeNumber)
+VALUES
+    ('Zsolts', 1002);
+
+INSERT INTO
+    staff (name, employeeNumber)
+VALUES
+    ('Anna', 1003);
+
+INSERT INTO
+    staff (name, employeeNumber)
+VALUES
+    ('Phil', 1004);
