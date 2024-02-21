@@ -16,7 +16,7 @@ CREATE TABLE enclosure (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255),
     capacity INT,
-    closedForMaintainance BOOLEAN
+    closedForMaintenance BOOLEAN
 );
 
 CREATE TABLE animal (
@@ -54,3 +54,15 @@ INSERT INTO
     staff (name, employeeNumber)
 VALUES
     ('Phil', 1004);
+
+
+-- Enclosure
+INSERT INTO
+    enclosure (name, capacity, closedForMaintenance)
+VALUES
+    ('Enclosure 1', 23, true);
+
+INSERT INTO
+    enclosure (name, capacity, closedForMaintenance)
+VALUES
+    ('Enclosure 2', 46, false);
